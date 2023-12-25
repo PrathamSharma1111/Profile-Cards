@@ -14,6 +14,7 @@ body {
   height: 100vh;
   font-family: "Roboto", arial, sans-serif;
   color: #2e22f2;
+  background-color: #b8bcf1;
 }
 #login-container {
   height: 400px;
@@ -50,23 +51,33 @@ body {
     align-items: center;
     width: calc(100% - 40px);
     margin: 0 auto;
-    a {
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+     
+    }li{
       text-align: center;
       border: solid 2px #2e22f2;
-      width: 75px;
+      width: 80px;
       padding: 5px 0;
       border-radius: 5px;
+      list-style: none;
+      margin: .2rem;
       &:hover {
         background:#2e22f2;
         color: #202020;
         cursor: pointer;
       }
     }
+    }
+  }
+  .btn{
+    display: flex;
   }
   button {
-    width: 80%;
-    height: 80px;
-    font-size: 2rem;
+    width: 40%;
+    height: 40px;
+    font-size: 1rem;
     margin: 30px 10% 0 10%;
     color:#202020;
     border: none;
@@ -114,7 +125,7 @@ body {
       }
     }
   }
-}
+
 
 @-webkit-keyframes gradientBG {
   0% {
